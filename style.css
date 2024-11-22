@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  
+}
+
+.box {
+
+  scroll-snap-align: start; /* Alignement au début de chaque section */
+  height: 100vh; /* Chaque section occupe la hauteur de la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: rgb(68, 0, 255);
+}.red {
+  background-color: rgb(156, 17, 110);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end; /* Aligner les éléments à droite */
+}
+
+nav span {
+  font-size: 2rem;
+  color: white;
+  padding-right: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-right: 1px solid white;
+}
+
+
+main {
+
+       scroll-snap-type: y mandatory; /* Défilement vertical obligatoire */
+      overflow-y: scroll; /* Activer le scrolling vertical */
+      height: 100vh
+
+}
